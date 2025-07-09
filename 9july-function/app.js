@@ -25,12 +25,19 @@ function greaterNum(){
     if(num1>num2){
         console.log("num1 is greater")
     }
+    else if(num1==num2){
+           console.log("num1 and num2 are equal");
+    }
     else{
         console.log("num2 is greater")
     }
 }
 greaterNum()
 // WAP to print your name ten times
+let name="aditya"
+for(let i=1;i<=10;i++){
+    document.write(name)
+}
 // WAP to print sum of all even numbers between 1 to 10 elements should be in array
 function evenNum(){
     let num=[1,2,3,4,5,6,7,8,9,10]
