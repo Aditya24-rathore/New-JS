@@ -5,7 +5,7 @@ function addText() {
     // T.innerHTML="Hello from Js"
     T.innerText="Hello from js"
     T.style.color="red"
-    // T.style.backgroudColor="black"
+    T.style.backgroundColor="black"
 
 }
 
@@ -14,6 +14,10 @@ function Change(){
     let X=document.querySelector("#text2")
     X.innerHTML="hello from Html"
     Y.innerHTML="Text from js"
+    X.style.color="Yellow"
+    Y.style.backgroundColor="Black"
+    X.style.backgroundColor="Black"
+    Y.style.color="Orange"
 }
 
 function changeColor(){
