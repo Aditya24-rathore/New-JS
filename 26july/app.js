@@ -46,8 +46,16 @@ let obj=[{
     city:"Bhopal"
 }]
 
+let store=document.querySelector("#store")
+
 let obj1=obj.map((e)=>{
-    console.log(e.name)
+    store.innerHTML+=`
+    <div style="border: 2px solid black;padding:50px;background-color: black;color:white;">
+    <h1>${e.name}</h1>
+    <p>${e.age}<p/>
+    <p>${e.city}</p>
+    </div>
+    `
 })
 
 console.log(obj[3]) //print all element
