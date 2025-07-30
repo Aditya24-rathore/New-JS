@@ -48,15 +48,44 @@ let obj=[{
 
 let store=document.querySelector("#store")
 
+// let obj1=obj.map((e)=>{
+//     store.innerHTML+=`
+//     <div style="border: 2px solid black;padding:50px;background-color: black;color:white;">
+//     <h1>${e.name}</h1>
+//     <p>${e.age}<p/>
+//     <p>${e.city}</p>
+//     </div>
+//     `
+// })
+
 let obj1=obj.map((e)=>{
     store.innerHTML+=`
-    <div style="border: 2px solid black;padding:50px;background-color: black;color:white;">
-    <h1>${e.name}</h1>
-    <p>${e.age}<p/>
-    <p>${e.city}</p>
-    </div>
+    <tr>
+    <td>${e.name}</td>
+    <td>${e.age}</td>
+    <td>${e.city}</td>
+    </tr>
     `
 })
 
 console.log(obj[3]) //print all element
 console.log(obj[3].name) //print single element
+
+let time=new Date()
+console.log(time);
+console.log(time.toLocaleString());
+console.log(time.getFullYear());
+console.log(time.getDay());
+console.log(time.getMonth());
+console.log(time.getMilliseconds());
+console.log(time.getMinutes());
+
+
+
+let Days=['Sun','Mon','Tue','Wed','Thu','Fri','Sat']
+console.log(Days[time.getDay()])
+
+let age=prompt("enter ur birthyear")
+let current=time.getFullYear()-age
+console.log(current);
+
