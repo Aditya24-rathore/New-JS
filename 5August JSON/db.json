@@ -1,0 +1,18 @@
+{
+    "doctorAppointment": [{
+        "name":"aditya",
+        "age":20,
+        "contactnumber":9098988909,
+        "email":"adi@email.com"
+    },{
+        "name":"harsh",
+        "age":21,
+        "contactnumber":9098938909,
+        "email":"harsh@email.com"
+    },{
+        "name":"aman",
+        "age":20,
+        "contactnumber":9098988890,
+        "email":"aman@email.com"
+    }]
+}
