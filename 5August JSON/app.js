@@ -1,30 +1,57 @@
-// fetch (GET ,POST, PUT, DELETE)
-let fatchdata= async()=>{
-    let url = "http://localhost:3000/carbook"
+let fetchdata = async () => {
+    let url = 'http://localhost:3000/movieticket';
+    let res = await fetch(url, { method: 'GET' });
+    let data = await res.json();
 
-    let res = await fetch(url,{method:"GET"})
+    const tbody = document.querySelector('#hii tbody');
+    tbody.innerHTML = ''; // Clear previous rows
 
-    let data = await res.json()
+    data.forEach((e) => {
+        tbody.innerHTML += `
+            <tr>
+                <td>${e.name}</td>
+                <td>${e.age}</td>
+                 <td>${e.location}</td>
+                  <td>${e.person}</td>
+                   <td>${e.price *e.person}</td>
+                
+                <td onclick="delet('${e.id}')">Delete</td>
+            </tr>
+        `;
+    });
+};
 
-    console.log(data);
+let delet = async (id) => {
+    let url = `http://localhost:3000/movie%20ticket/${id}`;
+    let res = await fetch(url, { method: 'DELETE' });
+}
+
+
+
+// POST
+let book = () => {
+    let Name = document.querySelector("#name").value.trim();
+    let Age = document.querySelector("#age").value.trim();
+    let Location = document.querySelector("#location").value.trim();
+    let Person = document.querySelector("#person").value.trim();
     
-    let show = document.querySelector("#showdata")
-    data.map((e)=>{
-        show.innerHTML+=`
-        <tr>
-            <td>${e.name}</td>
-            <td>${e.car}</td>
-            <td>${e.city}</td>
-            <td>${e.p}</td>
-            <td>${e.color}</td>
-            <td onclick="del('${e.id}')">Delete</td>
-        </tr>`
+    let url =  'http://localhost:3000/movieticket';
+
+   fetch(url, {
+        method: 'POST',
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            name: Name,
+            age: Age,
+            location: Location,
+            person: Person,
+            price: 500,
+            
+        })
     })
-
+    
+    location.href='index.html'
+    return false
 }
-
-let del=(id)=>{
-    let url =`http://localhost:3000/carbook/${id}`
-    fetch(url,{method:"DELETE"});
-}
-// fatchdata()

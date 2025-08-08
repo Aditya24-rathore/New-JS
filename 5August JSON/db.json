@@ -1,28 +1,44 @@
 {
-  "carbook": [
+  "movieticket": [
     {
-      "name": "LAkki",
-      "car": "name",
-      "city": "bhopal",
-      "p": 1000,
-      "color": "red",
-      "id": "dc17"
+      "name": "adi",
+      "age": 20,
+      "location": "Bhopal",
+      "person": 5,
+      "price": 500,
+      "id": "475d"
     },
     {
-      "name": "rohit",
-      "car": "name",
-      "city": "indore",
-      "p": 1000,
-      "color": "red",
-      "id": "2585"
+      "name": "aman",
+      "age": 25,
+      "location": "Bhopal",
+      "person": 5,
+      "price": 500,
+      "id": "f3b4"
     },
     {
-      "name": "rajesh",
-      "car": "name",
-      "city": "betul",
-      "p": 1000,
-      "color": "red",
-      "id": "2cac"
+      "name": "harsh",
+      "age": 20,
+      "location": "Sehore",
+      "person": 5,
+      "price": 500,
+      "id": "874b"
+    },
+    {
+      "id": "a36f",
+      "name": "arpit",
+      "age": "23",
+      "location": "Bhopal",
+      "person": "4",
+      "price": 500
+    },
+    {
+      "id": "989c",
+      "name": "aman",
+      "age": "30",
+      "location": "Sehore",
+      "person": "5",
+      "price": 500
     }
   ]
 }
