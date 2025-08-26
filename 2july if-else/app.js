@@ -69,3 +69,4 @@ if(char=='a'|| char=='e' || char=='i' || char=='o' || char=='u' ||char=='A'|| ch
 else{
     alert("char is constant")
 }
+

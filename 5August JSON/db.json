@@ -39,6 +39,14 @@
       "location": "Sehore",
       "person": "5",
       "price": 500
+    },
+    {
+      "id": "fd3b",
+      "name": "mayank",
+      "age": "20",
+      "location": "Bhopal",
+      "person": "6",
+      "price": 500
     }
   ]
 }
