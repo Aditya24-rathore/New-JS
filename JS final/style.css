@@ -1,0 +1,23 @@
+#show{
+    height: 300px;
+    width: 350px;
+    background-size: cover;
+}
+
+#show1{
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    margin-left: 400px;
+    margin-top: 80px;
+}
+
+#show1 button{
+    height: 50px;
+    width: 130px;
+    margin-top: 20px;
+    background-color: purple;
+    color: white;
+    font-size: 20px;
+}
+
